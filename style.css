@@ -18,6 +18,8 @@ h2{
 	font-size: 20px;
 	margin: 0px;
 	outline: solid #00B4C3 1px;
+	font-weight: lighter;
+	padding-left: 30px;
 }
 p{
 	margin: 0;
@@ -29,11 +31,12 @@ p{
 	font-size: 14px;
 	background-color: white;
 }
-.slider, .unSlider{
+.slider{
 	position: relative;
 	transition: 2s top;
 	display: block;
 	border: solid #00C6D6 2px;
+	cursor : pointer;
 }
 #slider2{
 	top:-122px;
