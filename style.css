@@ -4,3 +4,56 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+
+#frame{
+	margin: 100px;
+	float:left;
+}
+h2{
+	height: 45px;
+	width: 500px;
+	background-color: #00C6D6;
+	line-height: 43px;
+	color: white;
+	font-size: 20px;
+	margin: 0px;
+	outline: solid #00B4C3 1px;
+}
+p{
+	margin: 0;
+	padding: 20px;
+	display: block;
+	height: 120px;
+	width: 500px;
+	color: grey;
+	font-size: 14px;
+	background-color: white;
+}
+.slider, .unSlider{
+	position: relative;
+	transition: 2s top;
+	display: block;
+	border: solid #00C6D6 2px;
+}
+#slider2{
+	top:-122px;
+}
+#slider3{
+	top:-244px;
+}
+#frame .slide2{
+	top: 0px;
+}
+#frame .slide3{
+	top: -123px;
+}
+#screen{
+	background-color: white;
+	width: 505px;
+	height: 200px;
+	position: relative;
+	margin: 0px;
+	top: -244px;
+	border: solid #00B4C3 1px;
+	border-width: 1px 0 0 0 ;
+}

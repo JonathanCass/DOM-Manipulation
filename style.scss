@@ -1,0 +1,25 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+frame{
+	margin: 100px;
+}
+h2{
+	height: 45px;
+	width: 500px;
+	background-color: #00C6D6;
+	line-height: 43px;
+	color: white;
+	font-size: 20px;
+}
+p{
+	display: block;
+	height: 140px;
+	width: 500px;
+	color: grey;
+	font-size: 14px;
+}
