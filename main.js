@@ -1,13 +1,51 @@
 $(document).ready(function(){
-	var slideCheck = true;
-
-	if(slideCheck){
-		$( "#slider2" ).click(function() {
-			$(this).toggleClass("slide2")
-		})
-	}
+	var sPos = 0
+	$( "#slider1" ).click(function() {
+		switch(sPos){
+			case 0:
+				$("#slider3").addClass("slide3")
+				sPos = 1
+				break;
+			case 1:
+				$("#slider2").addClass("slide2")
+				sPos = 2
+				break;
+			case 2:
+				$("#slider2").removeClass("slide2")
+				sPos = 1
+				break;
+		}
+	})
+	$( "#slider2" ).click(function() {
+		switch(sPos){
+			case 0:
+				$("#slider3").addClass("slide3")
+				sPos = 1
+				break;
+			case 1:
+				$("#slider2").addClass("slide2")
+				sPos = 2
+				break;
+			case 2:
+				$("#slider2").removeClass("slide2")
+				sPos = 1
+				break;	
+		}
+	})
 	$( "#slider3" ).click(function() {
-		$(this).toggleClass("slide3")
-		slideCheck = !slideCheck
+		switch(sPos){
+			case 0:
+				$("#slider3").addClass("slide3")
+				sPos = 1
+				break;
+			case 1:
+				$("#slider3").removeClass("slide3")
+				sPos = 0
+				break;
+			case 2:
+				$("#slider2").removeClass("slide2")
+				sPos = 1
+				break;	
+		}
 	})	
 })
