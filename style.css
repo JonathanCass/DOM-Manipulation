@@ -50,6 +50,9 @@ p{
 #frame .slide3{
 	top: -123px;
 }
+h2:hover{
+	background-color: #00DAEC;
+}
 #screen{
 	background-color: white;
 	width: 505px;
